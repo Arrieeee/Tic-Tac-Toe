@@ -4,7 +4,7 @@ import pygame
 class GameLogic:
     def __init__(self):
         self.board = Board(800, 600)
-        self.player = 0 # 1 = player1, 1 = player 2
+        self.player = 0 # 0 = player1, 1 = player 2 
         self.was_pressed = []
         self.board_state = [0] * 9 
 
