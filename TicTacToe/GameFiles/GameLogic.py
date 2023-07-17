@@ -107,7 +107,7 @@ class GameLogic:
 
         self.board.draw_board()
         while running:
-            clock.tick()
+            clock.tick(60)
             self.handle_event()
 
     def check_winner(self, board_state):
