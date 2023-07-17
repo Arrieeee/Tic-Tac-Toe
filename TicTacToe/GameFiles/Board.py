@@ -4,7 +4,7 @@ class Board:
     def __init__(self, window_width, window_height):
         self.window_width = window_width
         self.window_height = window_height
-        self.screen = self.screen = pygame.display.set_mode((window_width, window_height))
+        self.screen = pygame.display.set_mode((window_width, window_height))
         pygame.display.set_caption('Tic-Tac-Toe')
 
     def draw_board(self):
@@ -17,7 +17,7 @@ class Board:
         pygame.draw.line(self.screen, 'white', (0, self.window_height // 3), (self.window_width, self.window_height // 3), 5)
         pygame.draw.line(self.screen, 'white', (0, self.window_height // 3 * 2), (self.window_width, self.window_height // 3 * 2), 5)
 
-        font = pygame.font.Font(None, 36)  # Choose a font and font size for the numbers
+        font = pygame.font.Font(None, 36)  
 
         for i in range(3):
             for j in range(3):
